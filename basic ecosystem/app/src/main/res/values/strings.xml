@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">pt1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Home">Home</string>
+    <string name="page1">page1</string>
+    <string name="toHome">To Home</string>
+    <string name="toPage">To Page</string>
+
+</resources>

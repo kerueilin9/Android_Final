@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Android_HW\\109590043_HW03_1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "outputFile": "C:\\Users\\kerueilin9\\Desktop\\Android\\Android_HW\\HW03\\109590043_HW3_1.3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\kerue\\.gradle\\caches\\transforms-3\\78afe7d364b9a8143977e8417923bcb2\\transformed\\appcompat-v7-26.1.0\\res\\values-v11\\values-v11.xml",
+                    "source": "C:\\Users\\kerueilin9\\.gradle\\caches\\transforms-3\\78afe7d364b9a8143977e8417923bcb2\\transformed\\appcompat-v7-26.1.0\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2,8,14,20,26,32,38,39,43,47,48,52,56,57,61,66,71,76,78,80,81,82,136,191",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

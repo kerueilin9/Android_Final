@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="favorite">favorite</string>
+    <string name="item">Item</string>
+    <string name="item1">Item1</string>
+    <string name="string_favorite">1</string>
+</resources>
