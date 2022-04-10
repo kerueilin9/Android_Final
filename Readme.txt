@@ -13,8 +13,17 @@ public class MainActivity extends AppCompatActivity{}
 --------------------------------------------------------------------------------------------------------------------------------------------------
 ViewModel相關套件：
 
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0' //Main
---------------------------
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    def room_version = "2.4.2"
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    // optional - Test helpers
+    testImplementation "androidx.room:room-testing:$room_version"
+
+    // optional - Paging 3 Integration
+    implementation "androidx.room:room-paging:2.5.0-alpha01"
+--------------------------------------
     dataBinding{
         enabled true
     }
