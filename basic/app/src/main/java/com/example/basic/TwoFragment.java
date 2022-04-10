@@ -36,6 +36,7 @@ public class TwoFragment extends Fragment {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_two, container, false);
         binding.setData(viewModel1);
         binding.setLifecycleOwner(getActivity());
+//        binding.textView3.setText(R.string.app_name);
         binding.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

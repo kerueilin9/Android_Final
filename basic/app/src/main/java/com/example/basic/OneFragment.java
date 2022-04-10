@@ -10,6 +10,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
@@ -27,6 +28,12 @@ public class OneFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
     }
+//
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.my_menu, menu);
+//        return true;
+//    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
