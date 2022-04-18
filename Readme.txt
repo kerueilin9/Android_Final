@@ -25,7 +25,11 @@ ViewModel相關套件：
     implementation "androidx.room:room-paging:2.5.0-alpha01"
 --------------------------------------
     dataBinding{
-        enabled true
+       	enabled true
+    }
+--------------------------------------
+    buildFeatures {
+        viewBinding true
     }
 --------------------------------------------------------------------------------------------------------------------------------------------------
 Replace onActivityCreated：
@@ -64,10 +68,43 @@ Determine if the EditText is empty：
 
 	boolean x = edt.getText().toString().matches("");
 --------------------------------------------------------------------------------------------------------------------------------------------------
+Create menu at Fragment：
 
+	public void onCreateOptionsMenu(@NonNull Menu menu, MenuInflater inflater){
+        	inflater.inflate(R.menu.my_menu, menu);
+       		super.onCreateOptionsMenu(menu, inflater);
+  	  }
+--------------------------------------------------------------------------------------------------------------------------------------------------
+NoActionBar：
 
+    <style name="Theme.HW7_2.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+--------------------------------------------------------------------------------------------------------------------------------------------------
+MainActivity：
+
+	private ActivityMainBinding binding;
+
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        setSupportActionBar(binding.toolbar);
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Navigation：
+
+	DrawerLayout：
+    		android:fitsSystemWindows="true"
+    		tools:openDrawer="start"
+
+	NavigationView：
+        	android:layout_gravity="start"
+        	android:fitsSystemWindows="true"
+		app:headerLayout=""
+		app:menu=""
 
 
 

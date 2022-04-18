@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MidProject</string>
+    <string name="input1">input1</string>
+    <string name="input2">input2</string>
+    <string name="plus">+</string>
+    <string name="equal">=</string>
+    <string name="result">\?</string>
+    <string name="button">result</string>
+    <string name="item1">item1</string>
+    <string name="item2">item2</string>
+    <string name="item0">result</string>
+    <string name="answer">answer</string>
+    <string name="yourAnswer">you\nanswer</string>
+</resources>

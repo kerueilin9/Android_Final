@@ -1,0 +1,11 @@
+Question 1
+Which statement best describes a local unit test? Choose one:
+A: Tests that are compiled and run entirely on your local machine with the Java Virtual Machine (JVM).
+
+Question 2
+Source sets are collections of related code. In which source set are you likely to find unit tests? Choose one:
+A: com.example.android.SimpleCalcTest (test)
+
+Question 3
+Which annotation is used to mark a method as an actual test? Choose one:
+A: @Test

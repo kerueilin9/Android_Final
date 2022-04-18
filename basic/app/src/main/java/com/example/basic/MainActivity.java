@@ -26,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
         return controller.navigateUp();
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.my_menu, menu);
-        return true;
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.my_menu, menu);
+//        return true;
+//    }
 }
