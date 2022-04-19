@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">test_1</string>
+    <string name="Dep">Department</string>
+
+    <string-array name="planets_array">
+        <item>CSIE</item>
+        <item>EE</item>
+        <item>Others</item>
+    </string-array>
+</resources>
