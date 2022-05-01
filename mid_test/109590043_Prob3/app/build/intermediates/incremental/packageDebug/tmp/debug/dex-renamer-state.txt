@@ -1,9 +1,9 @@
-#Tue Apr 19 16:40:19 CST 2022
-base.2=C\:\\Users\\USER\\Desktop\\Document\\Android_Final\\HW_DEMO\\TabExperiment\\TabExperiment\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+#Tue Apr 19 18:51:50 CST 2022
+base.2=C\:\\Users\\kerueilin9\\Desktop\\Android\\mid_test\\109590043_Prob3\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
 path.2=1/classes.dex
-base.1=C\:\\Users\\USER\\Desktop\\Document\\Android_Final\\HW_DEMO\\TabExperiment\\TabExperiment\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.1=C\:\\Users\\kerueilin9\\Desktop\\Android\\mid_test\\109590043_Prob3\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 path.1=0/classes.dex
-base.0=C\:\\Users\\USER\\Desktop\\Document\\Android_Final\\HW_DEMO\\TabExperiment\\TabExperiment\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.0=C\:\\Users\\kerueilin9\\Desktop\\Android\\mid_test\\109590043_Prob3\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
