@@ -1,0 +1,15 @@
+1.
+You use notification channels to display notifications to the user in the device status bar.
+Notification channels are not yet available in the Android Support Library package.
+----------------------------------------------------------------------------------------------
+2.
+NotificationCompat.Builder.notify()
+----------------------------------------------------------------------------------------------
+3.
+Click listener for the action button click event.
+----------------------------------------------------------------------------------------------
+4.
+NotificationCompat.Builder.addAction()
+----------------------------------------------------------------------------------------------
+5.
+PendingIntent.getBroadcast()

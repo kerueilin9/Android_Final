@@ -18,7 +18,7 @@ public interface WordDao {
     void updateW(Word... words);
 
     @Delete
-    void deleteW(Word... words);
+    void deleteW(Word... words);`
 
     @Query("DELETE FROM WORD")
     void deleteAllW();

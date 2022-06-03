@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Final</string>
+    <string name="nav_open">open</string>
+    <string name="nav_close">close</string>
+    <string name="image_data">t1</string>
+    <string name="camera">t1</string>
+    <string name="aseline_more_vert">1</string>
+    <string name="img">1</string>
+    <string name="takeAPic">takeAPic</string>
+    <string name="addPic">addPic</string>
+    <string name="Delete">Delete</string>
+    <string name="rename">Rename</string>
+    <string name="title">Title</string>
+    <string name="Delete_this_item">Delete this item</string>
+    <string name="This_action_will_delete_this_item">This action will delete this items!</string>
+    <string name="Delete_those_item">Delete those item</string>
+    <string name="This_action_will_delete_those_item">This action will delete those items!</string>
+    <string name="Delete_all_item">Delete all items</string>
+    <string name="This_action_will_delete_all_item">This action will delete all items!</string>
+    <string name="Document">Document</string>
+    <string name="My_Document">My Document</string>
+    <string name="Delete_All">Delete All</string>
+    <string name="Edit">Edit</string>
+    <string name="Mode">Mode</string>
+    <string name="Search_button">Search_button</string>
+
+</resources>

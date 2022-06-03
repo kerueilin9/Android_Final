@@ -1,0 +1,103 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:20:1-39:12
+INJECTED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:20:1-39:12
+INJECTED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:20:1-39:12
+INJECTED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:20:1-39:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\kerueilin9\.gradle\caches\transforms-3\1532a98d59eb43d3f32e237969cae5c1\transformed\appcompat-v7-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\kerueilin9\.gradle\caches\transforms-3\4476b3f77fe11d23ff2752b310d88a82\transformed\constraint-layout-1.1.2\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\kerueilin9\.gradle\caches\transforms-3\ef68e3f99d9c9861892f6023dae2d6b0\transformed\support-fragment-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\kerueilin9\.gradle\caches\transforms-3\b3d27e439368dfd5f7e1f6cbeb8f5821\transformed\animated-vector-drawable-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\kerueilin9\.gradle\caches\transforms-3\b00b4b2ca587c44b70a3356adbe0e835\transformed\support-core-ui-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\kerueilin9\.gradle\caches\transforms-3\beeea2acf8abd55704276da96dd837a7\transformed\support-core-utils-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\kerueilin9\.gradle\caches\transforms-3\6aa14acbab0b615bd7c3dbb39474ce54\transformed\support-vector-drawable-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\kerueilin9\.gradle\caches\transforms-3\e0436a4d642ce4bb755663d5392e7cb4\transformed\support-compat-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\kerueilin9\.gradle\caches\transforms-3\dbdc2d174bf5317ca7afd84c621bfb43\transformed\livedata-core-1.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\kerueilin9\.gradle\caches\transforms-3\2831812aa55c7935f4e51c96cb03edf3\transformed\viewmodel-1.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\kerueilin9\.gradle\caches\transforms-3\4ed70376016c3c002134986e4dabfec8\transformed\runtime-1.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\kerueilin9\.gradle\caches\transforms-3\320eb3d2802f6f7edf1f395f4f22bf51\transformed\runtime-1.1.0\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:20:1-39:12
+INJECTED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:20:1-39:12
+INJECTED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:20:1-39:12
+	package
+		ADDED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:21:5-43
+		INJECTED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:20:1-39:12
+		INJECTED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:20:1-39:12
+		INJECTED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:20:11-69
+application
+ADDED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:23:5-37:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\kerueilin9\.gradle\caches\transforms-3\4476b3f77fe11d23ff2752b310d88a82\transformed\constraint-layout-1.1.2\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\kerueilin9\.gradle\caches\transforms-3\4476b3f77fe11d23ff2752b310d88a82\transformed\constraint-layout-1.1.2\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:28:9-35
+	android:label
+		ADDED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:26:9-41
+	android:roundIcon
+		ADDED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:27:9-54
+	android:icon
+		ADDED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:25:9-43
+	android:allowBackup
+		ADDED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:24:9-35
+	android:theme
+		ADDED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:29:9-40
+activity#com.android.example.notifyme.MainActivity
+ADDED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:30:9-36:20
+	android:name
+		ADDED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:30:19-75
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:31:13-35:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:32:17-69
+	android:name
+		ADDED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:32:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:34:17-77
+	android:name
+		ADDED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml:34:27-74
+uses-sdk
+INJECTED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\kerueilin9\.gradle\caches\transforms-3\1532a98d59eb43d3f32e237969cae5c1\transformed\appcompat-v7-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\kerueilin9\.gradle\caches\transforms-3\1532a98d59eb43d3f32e237969cae5c1\transformed\appcompat-v7-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\kerueilin9\.gradle\caches\transforms-3\4476b3f77fe11d23ff2752b310d88a82\transformed\constraint-layout-1.1.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\kerueilin9\.gradle\caches\transforms-3\4476b3f77fe11d23ff2752b310d88a82\transformed\constraint-layout-1.1.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\kerueilin9\.gradle\caches\transforms-3\ef68e3f99d9c9861892f6023dae2d6b0\transformed\support-fragment-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\kerueilin9\.gradle\caches\transforms-3\ef68e3f99d9c9861892f6023dae2d6b0\transformed\support-fragment-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\kerueilin9\.gradle\caches\transforms-3\b3d27e439368dfd5f7e1f6cbeb8f5821\transformed\animated-vector-drawable-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\kerueilin9\.gradle\caches\transforms-3\b3d27e439368dfd5f7e1f6cbeb8f5821\transformed\animated-vector-drawable-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\kerueilin9\.gradle\caches\transforms-3\b00b4b2ca587c44b70a3356adbe0e835\transformed\support-core-ui-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\kerueilin9\.gradle\caches\transforms-3\b00b4b2ca587c44b70a3356adbe0e835\transformed\support-core-ui-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\kerueilin9\.gradle\caches\transforms-3\beeea2acf8abd55704276da96dd837a7\transformed\support-core-utils-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\kerueilin9\.gradle\caches\transforms-3\beeea2acf8abd55704276da96dd837a7\transformed\support-core-utils-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\kerueilin9\.gradle\caches\transforms-3\6aa14acbab0b615bd7c3dbb39474ce54\transformed\support-vector-drawable-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\kerueilin9\.gradle\caches\transforms-3\6aa14acbab0b615bd7c3dbb39474ce54\transformed\support-vector-drawable-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\kerueilin9\.gradle\caches\transforms-3\e0436a4d642ce4bb755663d5392e7cb4\transformed\support-compat-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\kerueilin9\.gradle\caches\transforms-3\e0436a4d642ce4bb755663d5392e7cb4\transformed\support-compat-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\kerueilin9\.gradle\caches\transforms-3\dbdc2d174bf5317ca7afd84c621bfb43\transformed\livedata-core-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\kerueilin9\.gradle\caches\transforms-3\dbdc2d174bf5317ca7afd84c621bfb43\transformed\livedata-core-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\kerueilin9\.gradle\caches\transforms-3\2831812aa55c7935f4e51c96cb03edf3\transformed\viewmodel-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\kerueilin9\.gradle\caches\transforms-3\2831812aa55c7935f4e51c96cb03edf3\transformed\viewmodel-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\kerueilin9\.gradle\caches\transforms-3\4ed70376016c3c002134986e4dabfec8\transformed\runtime-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\kerueilin9\.gradle\caches\transforms-3\4ed70376016c3c002134986e4dabfec8\transformed\runtime-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\kerueilin9\.gradle\caches\transforms-3\320eb3d2802f6f7edf1f395f4f22bf51\transformed\runtime-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\kerueilin9\.gradle\caches\transforms-3\320eb3d2802f6f7edf1f395f4f22bf51\transformed\runtime-1.1.0\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kerueilin9\Desktop\Android\Android\109590043_HW11.08.1\app\src\main\AndroidManifest.xml

@@ -14,6 +14,9 @@ public class MainActivity extends AppCompatActivity{}
 ViewModel相關套件：
 
     implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+
+Room相關套件：
+
     def room_version = "2.4.2"
     implementation "androidx.room:room-runtime:$room_version"
     annotationProcessor "androidx.room:room-compiler:$room_version"
@@ -94,6 +97,19 @@ MainActivity：
         setContentView(binding.getRoot());
         setSupportActionBar(binding.toolbar);
 --------------------------------------------------------------------------------------------------------------------------------------------------
+Menu：
+
+option：
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.option_menu, menu);
+        if(menu instanceof MenuBuilder){
+            MenuBuilder m = (MenuBuilder) menu;
+            m.setOptionalIconsVisible(true);
+        }
+        return true;
+    }
+
 Navigation：
 
 	DrawerLayout：
@@ -106,22 +122,64 @@ Navigation：
 		app:headerLayout=""
 		app:menu=""
 
+	@Override
+    	public void onBackPressed() {
+        	DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        	if (drawer != null) {
+            		if (drawer.isDrawerOpen(GravityCompat.START)) {
+                		drawer.closeDrawer(GravityCompat.START);
+            		} else {
+                		super.onBackPressed();
+            		}
+        	}
+    	}
 
+--------------------------------------------------------------------------------------------------------------------------------------------------
+take a picture：
 
+	<manifest>
+    		<uses-feature android:name="android.hardware.camera"
+        		android:required="true" />
+    		<queries>
+        		<intent>
+           			<action android:name="android.media.action.IMAGE_CAPTURE" />
+        		</intent>
+    		</queries>
 
+		<!--Save-->
+		<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+                     	android:maxSdkVersion="18" />
 
+	</manifest>
+--------------------------------------------------------------------------------------------------------------------------------------------------
+createNotificationChannel()：
 
+public void createNotificationChannel() {
 
+        // Create a notification manager object.
+        mNotifyManager =
+                (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 
+        // Notification channels are only available in OREO and higher.
+        // So, add a check on SDK version.
+        if (android.os.Build.VERSION.SDK_INT >=
+                android.os.Build.VERSION_CODES.O) {
 
+            // Create the NotificationChannel with all the parameters.
+            NotificationChannel notificationChannel = new NotificationChannel
+                    (PRIMARY_CHANNEL_ID,
+                            getString(R.string.job_service_notification),
+                            NotificationManager.IMPORTANCE_HIGH);
 
+            notificationChannel.enableLights(true);
+            notificationChannel.setLightColor(Color.RED);
+            notificationChannel.enableVibration(true);
+            notificationChannel.setDescription
+                    (getString(R.string.notification_channel_description));
 
-
-
-
-期末專題：
-	1. 交友軟體
-	2. 記帳 記事結合
-	3. 發票兌獎
-	4. 北科餐廳 + 吃甚麼APP 
-	5. 北科綜合(校園簡介等)APP
+            mNotifyManager.createNotificationChannel(notificationChannel);
+        }
+    }
+--------------------------------------------------------------------------------------------------------------------------------------------------
