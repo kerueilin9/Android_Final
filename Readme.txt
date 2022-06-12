@@ -183,3 +183,20 @@ public void createNotificationChannel() {
         }
     }
 --------------------------------------------------------------------------------------------------------------------------------------------------
+appbar backbtn：
+
+	android:parentActivityName=".MainActivity">
+        <meta-data android:name="android.support.PARENT_ACTIVITY"
+        	android:value=".MainActivity"/>
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+

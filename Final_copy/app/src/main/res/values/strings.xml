@@ -23,5 +23,11 @@
     <string name="Edit">Edit</string>
     <string name="Mode">Mode</string>
     <string name="Search_button">Search_button</string>
+    <string name="todo">TODO</string>
+    <string name="ok">ok</string>
+    <string name="Share">Share</string>
+    <string name="Replace_or_keep_old_files">Replace or keep old files</string>
+    <string name="Replace_or_keep_old_files_content">If you choose to replace, the old file will disappear forever</string>
+
 
 </resources>

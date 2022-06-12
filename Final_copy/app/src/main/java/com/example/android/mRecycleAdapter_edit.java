@@ -1,13 +1,12 @@
 package com.example.android;
 
 import android.annotation.SuppressLint;
-import android.app.Application;
 import android.content.Context;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -40,7 +39,7 @@ public class mRecycleAdapter_edit extends RecyclerView.Adapter<mRecycleAdapter_e
     @NonNull
     @Override
     public mRecycleAdapter_edit.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        ((MainActivity_edit)context).setTitle(((MainActivity_edit)context).getString(R.string.My_Document) + " (" + (selectedItem.size()) + ")");
+        ((MainActivity_edit)context).setTitle(context.getString(R.string.My_Document) + " (" + (selectedItem.size()) + ")");
         ((MainActivity_edit)context).setImageButtonBackground();
         return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.recycle_item_edit, parent, false));
     }
@@ -49,7 +48,7 @@ public class mRecycleAdapter_edit extends RecyclerView.Adapter<mRecycleAdapter_e
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         mRoomItem roomItem = allItem.get(position);
-        holder.imageView.setImageResource(roomItem.getImgResource());
+        holder.imageView.setImageURI(Uri.parse(roomItem.getImgResource()));
         holder.textView_title.setText(String.valueOf(roomItem.getTitle()));
 
         holder.itemView.setOnClickListener(view -> {
@@ -64,18 +63,8 @@ public class mRecycleAdapter_edit extends RecyclerView.Adapter<mRecycleAdapter_e
                 holder.checkBox.setChecked(true);
             }
             ((MainActivity_edit)context).setImageButtonBackground();
-            ((MainActivity_edit)context).setTitle(((MainActivity_edit)context).getString(R.string.My_Document) + " (" + (selectedItem.size()) + ")");
+            ((MainActivity_edit)context).setTitle(context.getString(R.string.My_Document) + " (" + (selectedItem.size()) + ")");
         });
-//        holder.checkBox.setOnClickListener(view -> {
-//            if(holder.checkBox.isChecked()){
-//                selectedItem.add(roomItem);
-//                //Toast.makeText(context.getApplicationContext(), String.valueOf(roomItem.getId()), Toast.LENGTH_SHORT).show();
-//            } else{
-//                selectedItem.remove(removeItem(roomItem.getId()));
-//            }
-//            ((MainActivity_edit)context).setImageButtonBackground();
-//            ((MainActivity_edit)context).setTitle(((MainActivity_edit)context).getString(R.string.My_Document) + " (" + (selectedItem.size()) + ")");
-//        });
     }
 
     @Override

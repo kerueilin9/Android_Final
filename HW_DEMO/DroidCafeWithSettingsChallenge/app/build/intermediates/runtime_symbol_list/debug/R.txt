@@ -22,6 +22,8 @@ int array pref_example_list_titles 0x7f030003
 int array pref_example_list_values 0x7f030004
 int array pref_market_titles 0x7f030005
 int array pref_market_values 0x7f030006
+int array pref_method_titles 0x7f030007
+int array pref_method_values 0x7f030008
 int attr actionBarDivider 0x7f040000
 int attr actionBarItemBackground 0x7f040001
 int attr actionBarPopupTheme 0x7f040002
@@ -1153,6 +1155,7 @@ int string pref_title_account 0x7f0e004b
 int string pref_title_account_settings 0x7f0e004c
 int string pref_title_add_friends_to_messages 0x7f0e004d
 int string pref_title_display_name 0x7f0e004e
+int string pref_title_method 0x7f0e0059
 int string pref_title_new_message_notifications 0x7f0e004f
 int string pref_title_ringtone 0x7f0e0050
 int string pref_title_social_recommendations 0x7f0e0051

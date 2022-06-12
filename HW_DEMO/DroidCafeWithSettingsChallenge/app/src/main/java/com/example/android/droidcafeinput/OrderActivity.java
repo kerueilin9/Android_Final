@@ -17,7 +17,9 @@
 package com.example.android.droidcafeinput;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RadioButton;
@@ -30,6 +32,7 @@ import android.widget.Toast;
  */
 public class OrderActivity extends AppCompatActivity {
 
+    RadioButton b1, b2, b3;
     /**
      * Sets the content view to activity_order, and gets the intent and its
      * data.
@@ -46,6 +49,24 @@ public class OrderActivity extends AppCompatActivity {
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
         TextView textView = findViewById(R.id.order_textview);
         textView.setText(message);
+        SharedPreferences sharedPref = PreferenceManager
+                .getDefaultSharedPreferences(this);
+        String marketPref = sharedPref
+                .getString("example_123", "-1");
+        displayToast(getResources().getStringArray(R.array.pref_method_titles)[Integer.parseInt(marketPref)]);
+
+        b1 = findViewById(R.id.sameday);
+        b2 = findViewById(R.id.nextday);
+        b3 = findViewById(R.id.pickup);
+
+        if (marketPref.equals("0")){
+            b1.setChecked(true);
+        } else if (marketPref.equals("1")) {
+            b2.setChecked(true);
+        } else {
+            b3.setChecked(true);
+        }
+
     }
 
     /**

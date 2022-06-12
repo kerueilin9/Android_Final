@@ -3,6 +3,8 @@ package com.example.android;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,10 +23,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class mRecycleAdapter extends RecyclerView.Adapter<mRecycleAdapter.ViewHolder> {
+public class mRecycleAdapter extends RecyclerView.Adapter<mRecycleAdapter.roomViewHolder> {
 
-    List<mRoomItem> allItem = new ArrayList<>();
-    Context context;
+    private List<mRoomItem> allItem = new ArrayList<>();
+    private Context context;
     RoomViewModel roomViewModel;
 
     public void setAllItem(Context context, List<mRoomItem> allItem) {
@@ -33,17 +35,45 @@ public class mRecycleAdapter extends RecyclerView.Adapter<mRecycleAdapter.ViewHo
         roomViewModel = ViewModelProviders.of((FragmentActivity) context).get(RoomViewModel.class);
     }
 
+    static class roomViewHolder extends RecyclerView.ViewHolder
+        implements View.OnClickListener{
+
+        public TextView textView_title;
+        public ImageView imageView;
+        public ImageButton imageButton;
+        public mRecycleAdapter adapter;
+
+        public roomViewHolder(View itemView, mRecycleAdapter adapter) {
+            super(itemView);
+            textView_title = itemView.findViewById(R.id.title);
+            imageView = itemView.findViewById(R.id.imageView2);
+            imageButton = itemView.findViewById(R.id.imageButton);
+            this.adapter = adapter;
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View view) {
+            int item_pos = getLayoutPosition();
+            Intent intent = new Intent(adapter.context, MainActivity_review.class);
+            intent.putExtra("key_id", adapter.allItem.get(item_pos).getId());
+            intent.putExtra("key_title", adapter.allItem.get(item_pos).getTitle());
+            intent.putExtra("key_image", adapter.allItem.get(item_pos).getImgResource());
+            adapter.context.startActivity(intent);
+        }
+    }
+
     @NonNull
     @Override
-    public mRecycleAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.recycle_item, parent, false));
+    public mRecycleAdapter.roomViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        return new roomViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.recycle_item, parent, false), this);
     }
 
     @SuppressLint("NonConstantResourceId")
     @Override
-    public void onBindViewHolder(@NonNull mRecycleAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull roomViewHolder holder, int position) {
         mRoomItem roomItem = allItem.get(position);
-        holder.imageView.setImageResource(roomItem.getImgResource());
+        holder.imageView.setImageURI(Uri.parse(roomItem.getImgResource()));
         holder.textView_title.setText(String.valueOf(roomItem.getTitle()));
 
         holder.imageButton.setOnClickListener(view -> {
@@ -64,7 +94,7 @@ public class mRecycleAdapter extends RecyclerView.Adapter<mRecycleAdapter.ViewHo
                         alert_rename.setTitle(R.string.rename);
                         alert_rename.setView(container);
                         alert_rename.setPositiveButton("OK", (dialog, which) -> {
-                            mRoomItem roomItem1 = new mRoomItem(R.drawable.ic_baseline_image_24, editText.getText().toString());
+                            mRoomItem roomItem1 = new mRoomItem(roomItem.getImgResource(), editText.getText().toString());
                             roomItem1.setId(roomItem.getId());
                             roomViewModel.updateR(roomItem1);
                             //Toast.makeText(context.getApplicationContext(), String.valueOf(roomItem.getId()), Toast.LENGTH_SHORT).show();
@@ -102,23 +132,4 @@ public class mRecycleAdapter extends RecyclerView.Adapter<mRecycleAdapter.ViewHo
         return allItem.size();
     }
 
-    static class ViewHolder extends RecyclerView.ViewHolder
-        implements View.OnClickListener{
-
-        TextView textView_title;
-        ImageView imageView;
-        ImageButton imageButton;
-
-        public ViewHolder(View itemView) {
-            super(itemView);
-            textView_title = itemView.findViewById(R.id.title);
-            imageView = itemView.findViewById(R.id.imageView2);
-            imageButton = itemView.findViewById(R.id.imageButton);
-        }
-
-        @Override
-        public void onClick(View view) {
-
-        }
-    }
 }

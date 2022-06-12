@@ -2,7 +2,6 @@ package com.example.android;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,15 +17,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.android.databinding.ActivityMainEditBinding;
 
-import java.util.List;
-
 public class MainActivity_edit extends AppCompatActivity {
 
     ActivityMainEditBinding binding;
     RoomViewModel roomViewModel;
     RecyclerView recyclerView;
     mRecycleAdapter_edit adapter;
-    List<mRoomItem> selected_item;
     ImageButton imageButton1, imageButton2, imageButton3;
 
     @SuppressLint("NotifyDataSetChanged")
@@ -82,7 +78,7 @@ public class MainActivity_edit extends AppCompatActivity {
             alert_rename.setTitle(R.string.rename);
             alert_rename.setView(container);
             alert_rename.setPositiveButton("OK", (dialog, which) -> {
-                mRoomItem roomItem1 = new mRoomItem(R.drawable.ic_baseline_image_24, editText.getText().toString());
+                mRoomItem roomItem1 = new mRoomItem(adapter.getSelectedItem().get(0).getImgResource(), editText.getText().toString());
                 roomItem1.setId(adapter.getSelectedItem().get(0).getId());
                 roomViewModel.updateR(roomItem1);
                 super.onBackPressed();

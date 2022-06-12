@@ -23,6 +23,8 @@ array pref_example_list_titles
 array pref_example_list_values
 array pref_market_titles
 array pref_market_values
+array pref_method_titles
+array pref_method_values
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -1154,6 +1156,7 @@ string pref_title_account
 string pref_title_account_settings
 string pref_title_add_friends_to_messages
 string pref_title_display_name
+string pref_title_method
 string pref_title_new_message_notifications
 string pref_title_ringtone
 string pref_title_social_recommendations

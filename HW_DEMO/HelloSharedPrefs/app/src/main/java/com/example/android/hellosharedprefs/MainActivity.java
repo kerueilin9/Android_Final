@@ -49,10 +49,6 @@ public class MainActivity extends AppCompatActivity {
     // Shared preferences object
     private SharedPreferences mPreferences;
 
-    // Name of shared preferences file
-    private String sharedPrefFile =
-            "com.example.android.hellosharedprefs";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +60,8 @@ public class MainActivity extends AppCompatActivity {
         mColor = ContextCompat.getColor(this,
                 R.color.default_background);
 
+        // Name of shared preferences file
+        String sharedPrefFile = "com.example.android.hellosharedprefs";
         mPreferences = getSharedPreferences(sharedPrefFile, MODE_PRIVATE);
 
         // Restore preferences

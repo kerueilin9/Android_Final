@@ -10,14 +10,14 @@ public class mRoomItem {
     private int id;
 
     @ColumnInfo(name = "img")
-    private int imgResource;
+    private String imgResource;
 
     @ColumnInfo(name = "title")
     private String title;
 
     mRoomItem(){}
 
-    public mRoomItem(int imgResource, String title){
+    public mRoomItem(String imgResource, String title){
         this.imgResource = imgResource;
         this.title = title;
     }
@@ -30,11 +30,11 @@ public class mRoomItem {
         this.id = id;
     }
 
-    public int getImgResource() {
+    public String getImgResource() {
         return imgResource;
     }
 
-    public void setImgResource(int imgResource) {
+    public void setImgResource(String imgResource) {
         this.imgResource = imgResource;
     }
 

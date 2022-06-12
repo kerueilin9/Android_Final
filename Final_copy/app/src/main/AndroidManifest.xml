@@ -26,9 +26,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Final">
         <activity
-            android:name=".MainActivity_edit"
+            android:name=".MainActivity_review"
             android:exported="false"
             android:parentActivityName=".MainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".CropperActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+
+        <activity
+            android:name=".MainActivity_edit"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -41,21 +68,23 @@
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-
                 <data
                     android:host="*"
                     android:scheme="http" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.MediaStore.ACTION_IMAGE_CAPTURE" />
-
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            tools:ignore="MissingClass" />
     </application>
 
 </manifest>
