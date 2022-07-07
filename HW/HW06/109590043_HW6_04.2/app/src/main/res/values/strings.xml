@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">109590043_HW6</string>
+    <string name = "CB1">Chocolate syrup</string>
+    <string name = "CB2">Sprinkles</string>
+    <string name = "CB3">Crushed nuts</string>
+    <string name = "CB4">Cherries</string>
+    <string name = "CB5">Orio cookie crumbles</string>
+    <string name = "BTN">Show Toast</string>
+</resources>

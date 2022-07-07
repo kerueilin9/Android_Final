@@ -1,0 +1,9 @@
+1.
+strings.xml
+--------------------------------------------------------------------------------------------------
+2.
+pref_general.xml
+--------------------------------------------------------------------------------------------------
+3.
+Use a settings activity that extends AppCompatActivity, a fragment that 
+extends PreferenceFragmentCompat, and a SwitchPreferenceCompat for the UI.

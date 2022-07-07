@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">期末專題</string>
+    <string name="nav_open">開啟</string>
+    <string name="nav_close">關閉</string>
+    <string name="takeAPic">拍照</string>
+    <string name="addPic">新增照片</string>
+    <string name="Delete">刪除</string>
+    <string name="rename">重新命名</string>
+    <string name="title">標題</string>
+    <string name="Delete_this_item">刪除這個項目</string>
+    <string name="This_action_will_delete_this_item">這個動作會刪除這個項目</string>
+    <string name="Delete_those_item">刪除這些項目</string>
+    <string name="This_action_will_delete_those_item">這個動作會刪除這些項目</string>
+    <string name="Delete_all_item">刪除所有項目</string>
+    <string name="This_action_will_delete_all_item">這個動作會刪除所有項目</string>
+    <string name="Document">文件</string>
+    <string name="My_Document">我的文件</string>
+    <string name="Delete_All">刪除所有</string>
+    <string name="Edit">編輯</string>
+    <string name="Mode">模式</string>
+    <string name="Language">語言</string>
+    <string name="Choose_theme">選擇主題</string>
+    <string name="Choose_language">選擇語言</string>
+    <string name="Theme">主題</string>
+    <string name="Other">其他</string>
+    <string name="About_ClearScanner">關於 ClearScanner</string>
+    <string name="Feature_Request_Bug_Report">功能要求/Bug回報</string>
+    <string name="Settings">設定</string>
+    <string name="Tutorial">使用說明</string>
+    <string name="Replace_or_keep_old_files_content">如果您選擇替代,就的檔案將永遠消失</string>
+    <string name="Replace_or_keep_old_files">替代或保留舊檔</string>
+    <string name="Share">分享</string>
+    <string name="todo">TODO</string>
+
+    <string-array name="theme_title">
+        <item>明亮</item>
+        <item>黑暗</item>
+        <item>跟隨系統</item>
+    </string-array>
+
+    <string-array name="language_title">
+        <item>英文</item>
+        <item>繁體中文</item>
+    </string-array>
+
+
+
+</resources>

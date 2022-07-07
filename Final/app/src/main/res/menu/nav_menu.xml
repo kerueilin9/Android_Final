@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Setting"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/Settings" />
+    <item android:title="@string/Other">
+        <menu>
+            <item
+                android:id="@+id/Tutorial"
+                android:icon="@drawable/ic_baseline_help_outline_24"
+                android:title="@string/Tutorial" />
+            <item
+                android:id="@+id/Feature_Request"
+                android:icon="@drawable/ic_baseline_textsms_24"
+                android:title="@string/Feature_Request_Bug_Report" />
+            <item
+                android:id="@+id/About_ClearScanner"
+                android:icon="@drawable/ic_baseline_error_outline_24"
+                android:title="@string/About_ClearScanner" />
+        </menu>
+    </item>
+</menu>

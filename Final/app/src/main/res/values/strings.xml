@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Final</string>
+    <string name="nav_open">open</string>
+    <string name="nav_close">close</string>
+    <string name="image_data" translatable="false">t1</string>
+    <string name="camera" translatable="false">t1</string>
+    <string name="aseline_more_vert" translatable="false">1</string>
+    <string name="img" translatable="false">1</string>
+    <string name="takeAPic">takeAPic</string>
+    <string name="addPic">addPic</string>
+    <string name="Delete">Delete</string>
+    <string name="rename">Rename</string>
+    <string name="title">Title</string>
+    <string name="Delete_this_item">Delete this item</string>
+    <string name="This_action_will_delete_this_item">This action will delete this items!</string>
+    <string name="Delete_those_item">Delete those item</string>
+    <string name="This_action_will_delete_those_item">This action will delete those items!</string>
+    <string name="Delete_all_item">Delete all items</string>
+    <string name="This_action_will_delete_all_item">This action will delete all items!</string>
+    <string name="Document">Document</string>
+    <string name="My_Document">My Document</string>
+    <string name="Delete_All">Delete All</string>
+    <string name="Edit">Edit</string>
+    <string name="Mode">Mode</string>
+    <string name="Search_button" translatable="false">Search_button</string>
+    <string name="ok" translatable="false">ok</string>
+    <string name="Share">Share</string>
+    <string name="Replace_or_keep_old_files">Replace or keep old files</string>
+    <string name="Replace_or_keep_old_files_content">If you choose to replace, the old file will disappear forever</string>
+    <string name="Tutorial">" Tutorial"</string>
+    <string name="Settings">Settings</string>
+    <string name="Feature_Request_Bug_Report">Feature Request / Bug Report</string>
+    <string name="About_ClearScanner">About ClearScanner</string>
+    <string name="Other">Other</string>
+    <string name="Theme">Theme</string>
+    <string name="Choose_theme">Choose theme</string>
+    <string name="Choose_language">Choose language</string>
+    <string name="Language">Language</string>
+    <string name="none" translatable="false">none</string>
+    <string name="Final_Project" translatable="false">Final Project</string>
+    <string name="todo">TODO</string>
+
+    <string-array name="theme_title">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>System_default</item>
+    </string-array>
+
+    <string-array name="theme_value">
+        <item>1</item>
+        <item>2</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="language_title">
+        <item>English</item>
+        <item>Chinese(traditional)</item>
+    </string-array>
+
+    <string-array name="language_value">
+        <item>en</item>
+        <item>zh</item>
+    </string-array>
+
+    <string name="order1" translatable="false">
+        APP 使用說明:\n\n
+        擷取圖片:\n\n\t\t\t\t
+        點擊螢幕下方按鈕可擷取圖片或開啟檔案\n\n
+        編輯圖片:\n\n\t\t\t\t
+        進行圖片裁切、對比、明暗調整\n\n
+        重新命名、刪除、分享文件:\n\n\t\t\t\t
+        點擊右上主選單編輯按鈕，進行多個文件刪除\n\t\t\t\t
+        或分享，或是點擊文件右方選單進行重新命名\n\t\t\t\t
+        、刪除或分享
+    </string>
+    <string name="order2" translatable="false">
+        若你對此APP有任何建議，請發送電子郵件至:\nt109590041@ntut.org.tw
+    </string>
+    <string name="order3" translatable="false">
+        組員:\n\n
+        \t\t\t\t資工二 109590043 柯瑞霖\n
+        \t\t\t\t資工二 109590049 林敬翰\n
+        \t\t\t\t資工二 109590041 范遠皓\n
+    </string>
+
+</resources>

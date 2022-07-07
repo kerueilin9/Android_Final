@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/Theme">
+        <ListPreference
+            android:title="@string/Choose_theme"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:defaultValue="1"
+            android:key="Choose_theme"
+            android:entries="@array/theme_title"
+            android:entryValues="@array/theme_value">
+        </ListPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/Language">
+        <ListPreference
+            android:title="@string/Choose_language"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:defaultValue="en"
+            android:key="Choose_language"
+            android:entries="@array/language_title"
+            android:entryValues="@array/language_value">
+        </ListPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>
