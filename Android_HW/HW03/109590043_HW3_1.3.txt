@@ -1,8 +1,0 @@
-1.
-One view or one view group
---------------------------------------------------------------
-2.
-android:orientation="horizontal"
---------------------------------------------------------------
-3.
-android:layout_width="match_parent"

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.android.SimpleCalcTest.CalculatorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-19T08:48:49" hostname="LAPTOP-CVMMSSMK" time="0.002">
-  <properties/>
-  <testcase name="test2" classname="com.example.android.SimpleCalcTest.CalculatorTest" time="0.002"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

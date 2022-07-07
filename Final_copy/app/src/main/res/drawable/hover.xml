@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@color/btn_hover" android:state_focused="false" android:state_pressed="true"/>
-    <item android:drawable="@color/btn_NO_hover"/>
-<!--    <item android:drawable="@color/btn_hover" android:state_hovered="true" tools:ignore="StateListReachable" />-->
-</selector>

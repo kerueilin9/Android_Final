@@ -1,8 +1,0 @@
-1.
-Perform an action, match a view, and assert and verify the result.
-------------------------------------------------------------------------
-2.
-@RunWith
-------------------------------------------------------------------------
-3.
-onView() to load the View from the current View hierarchy.
