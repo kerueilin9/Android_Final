@@ -31,7 +31,7 @@ import androidx.core.content.FileProvider;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.lifecycle.LiveData;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity
             e.printStackTrace();
         }
 
-        roomViewModel = ViewModelProviders.of(this).get(RoomViewModel.class);
+        roomViewModel = new ViewModelProvider(this).get(RoomViewModel.class);
         recyclerView = findViewById(R.id.recyclerView);
         adapter = new mRecycleAdapter();
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

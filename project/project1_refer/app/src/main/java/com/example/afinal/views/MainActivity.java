@@ -1,5 +1,6 @@
 package com.example.afinal.views;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
@@ -23,6 +24,7 @@ import com.example.afinal.database.DataModel;
 import com.example.afinal.model.NotificationInfo;
 
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
@@ -37,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         MainApplication.setMainActivityContext(this);
 
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.drawable.logo);
 
         setContentView(R.layout.activity_main);
@@ -58,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                     ).show();
         }
 
-        notificationView = (RecyclerView) findViewById(R.id.recyclerView);
+        notificationView = findViewById(R.id.recyclerView);
         notificationView.setLayoutManager(new LinearLayoutManager(this));
         notificationView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
 
@@ -125,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
 
     ItemTouchHelper.SimpleCallback itemTouchHelperCallback = new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.RIGHT) {
         @Override
-        public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
+        public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
             return false;
         }
 

@@ -66,7 +66,6 @@ public class DataModel extends SQLiteOpenHelper {
             do{
                 NotificationInfo notification = new NotificationInfo();
                 notification.setId(Integer.parseInt(c.getString(0)));
-                notification.setPackageName(c.getString(1));
                 notification.setTitle(c.getString(2));
                 notification.setText(c.getString(3));
                 notificationList.add(notification);

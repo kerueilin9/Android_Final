@@ -11,6 +11,7 @@
         android:theme="@style/Theme.Project1">
         <activity
             android:name=".MainActivity"
+            android:theme="@style/Theme.Project1.NoActionBar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,6 +19,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service
+            android:name=".service.NotificationCatchService"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+        <!--            <receiver-->
+        <!--                android:name=".receiver.AlarmBroadcastReceiver"-->
+        <!--                android:enabled="true"-->
+        <!--                android:exported="false">-->
+        <!--                <intent-filter>-->
+        <!--                    <action android:name="android.intent.action.BOOT_COMPLETED" />-->
+        <!--                    <action android:name="android.intent.action.MAIN" />-->
+        <!--                </intent-filter>-->
+        <!--            </receiver>-->
     </application>
 
 </manifest>
